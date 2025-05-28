@@ -1,0 +1,12 @@
+* useRef - It provides a way to create a reference for the "dom element" or a "value".
+         so , For doing changes on a particular element(tag) we just create a reference of it
+          and do perform the changes on that reference.
+          also moslty in case of reference of a  "value" if u change the value, the component doesnt re-renders.
+          but if we use useState to create that value then the componentre-renders when value changes.
+          - useRef doesnot changes even if the component re-renders.
+
+* so there are three ways to create a variable in react :
+
+1. let value = 0; // rarely used , its value is reset when the component is re-renders.(thats why we use useRef)
+2. const [value , setValue] = useState(0);  // for those variables we want to re-render whenever its value changes.
+3. const value = useRef(0); // for those variables which we dont want to show on the page , and dont want to re-render components when its value changes.

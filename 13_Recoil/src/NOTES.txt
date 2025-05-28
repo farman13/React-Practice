@@ -1,0 +1,33 @@
+* In case of useState & ContextAPI if a state variable changes, the whole component that contain that state is re-render , 
+  that causes unnecessary components re-renders. 
+  
+e.g.
+ the code we writed using useState , idealy it will only re-render the GetCount component but it is also 
+ re-rendering increment and decreament ,also Counter components.
+    
+ but if we use recoil it will only re-render GetCount component as only it is using(subscribes) count which is going to change.
+
+* The performance of a React app is measured by the number of re-renders. Each re-render is expensive,
+  and you should aim to minimize it.
+
+* Recoil minimizes unnecessary renders by only re-rendering components that depend on changed atoms & selectors. so 
+  it increases the performance.
+  - It uses two things "atoms" and "selectors"
+
+ Recoil do all the things of context api like solves the props drilling , but also reduces the unnecessary re-renders.
+
+   Atom : Atoms are units of state that can be read from and written to from any component. 
+   When an atom’s state changes, all components that subscribe to that atom will re-render.
+
+   selectors : A selector represents a piece of derived state. basically a selector is derived from atoms,
+               it selects the part of atom and perform operations on it.
+               it minimizes the number of re-renders. 
+               (see in recoil_1 file).
+
+               selector has two key value pairs :
+               key and the get, here the get takes what the function returns(value) also this get functions 
+               uses get() [ which has access to all the atoms].
+
+   
+
+

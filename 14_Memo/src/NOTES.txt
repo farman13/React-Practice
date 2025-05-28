@@ -1,0 +1,8 @@
+1. If a state variable inside a component is changes then the component is re-render and  'all its childrens also
+are re-render'.
+
+2. memo hook/Api is used to memorize the children components/any component ,that you only re-renders when your state 
+variables/props are changing.
+
+another syntax : const memorizeComponent = memo(component);
+                now inplace of that component write memorizeComponent.

@@ -1,0 +1,5 @@
+In this we fetch the values of atoms from a backend using recoil Asyncronous data queries.
+
+we want to do a Asyncronous function call to fetch the data, for this we use selector , as in selector
+the second key is get which takes value from a function so we use it and make that Asyncronous and do fetch 
+the details from the server by using it.

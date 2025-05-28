@@ -1,0 +1,10 @@
+In this we create the linkedIn top bar using recoil.
+
+why recoil atoms over normal useState?
+ - solves props drilling without need of context api .
+ - minimizes re-renders without need of memo.
+
+* Hooks in recoil :
+  1. useRecoilValue = gives(subscribes) the atoms , selectors value only.
+  2. useSetRecoilState = gives the setter function for atoms.
+  3. useRecoilState = gives both value & settle function.

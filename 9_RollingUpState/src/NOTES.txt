@@ -1,0 +1,3 @@
+* Rolling up the state means that you already declared the state variable in a component , 
+   but for some reason you have to rolling up that state variable to its ancester so that it can be
+   access by the other components also.

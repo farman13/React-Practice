@@ -1,0 +1,24 @@
+* SPA - It is a type of application which dont reload the page when we navigate through different routes.
+      that means it doesnot request the server when we navigates. 
+
+* To create single page applications first install the package "react-router-dom".
+
+* After wrapping the routes inside BrowserRouter , until this point the webapp is not spa . 
+  we have to use Link(Component) or useNavigate (hook) to make it SPA . 
+  if we use <a> tags then its not a SPA anymore.
+
+  - BrowserRouter: A router that uses the HTML5 history API to keep your UI in sync with the URL.
+  - Route: Defines a path and the component that should be rendered when the path is matched.
+  - Link can only used inside the BrowserRouter bcoz BrowserRouterprovides some mechanism to navigate between different routes.
+* Mostly we use Link tags for navigation.
+
+* If user goes to a route which is not exist , for that we create a custom error page and for that 
+  we create a route with path='*' . and render our custom error component.
+
+* Layouts - It is used to divide our page into sections like header then "main content" then footer.
+            For this we use outlet component to render the "main content" inside the component
+            we created for Layouting.
+            layout route - Jis bhi route pr jyga uske component ko render kr dega outlet component.
+            Basically Outlet component just render the children .
+
+ 
