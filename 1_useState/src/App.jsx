@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { Component, useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
@@ -63,3 +63,8 @@ export default App
 // Re-rendering in React occurs when a component's state or props change, causing React to re-invoke the render()
 // method to update the component's output in the virtual DOM. If there are differences between the virtual DOM and 
 // the actual DOM,React efficiently updates only the changed parts in the actual DOM (using its reconciliation process).
+
+
+// IMP : As Counter component is inside the count1 becomes zero when we perform any of the operations on count ,
+// bcoz it will re-render the whole App component which re-mounts the Counter component
+

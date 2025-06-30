@@ -41,7 +41,7 @@ function Counter(props) {
     }
   }, [])
 
-  useEffect(function () {             // code inside it will only runs when count value changes.
+  useEffect(function () {             // code inside it will only runs when component firstly mounts & when count value changes.
     console.log("Counter has changed!");
 
     return function () {              // this cleanup is called whenever the count value changed!

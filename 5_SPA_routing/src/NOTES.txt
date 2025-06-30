@@ -9,7 +9,7 @@
 
   - BrowserRouter: A router that uses the HTML5 history API to keep your UI in sync with the URL.
   - Route: Defines a path and the component that should be rendered when the path is matched.
-  - Link can only used inside the BrowserRouter bcoz BrowserRouterprovides some mechanism to navigate between different routes.
+  - Link can only used inside the BrowserRouter bcoz BrowserRouter provides some mechanism to navigate between different routes.
 * Mostly we use Link tags for navigation.
 
 * If user goes to a route which is not exist , for that we create a custom error page and for that 

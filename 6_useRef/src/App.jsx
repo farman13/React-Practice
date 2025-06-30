@@ -6,6 +6,7 @@ function App() {
   function FocusOnInput() {
     InputRef.current.focus();     // this will highlight the input box.
     console.log(InputRef.current.value);   // if i print InputRef.current it will give us the input tag
+    console.log(InputRef.current)
   }
 
   return (

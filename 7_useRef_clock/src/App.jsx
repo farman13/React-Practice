@@ -7,7 +7,7 @@ function App() {
 
   // NOTE : if i create a simple let timer instead of useRef variable , then the problem is as the state varaible
   //        keeps changing that means re-rendering happens and the value of let is reset that means we lost the value 
-  //        which is return by the setInterval in line 12 . hence we cant be able to clearInterval it.
+  //        which is return by the setInterval in line 13 . hence we cant be able to clearInterval it.
   function StartClock() {
 
     let value = setInterval(function () {
