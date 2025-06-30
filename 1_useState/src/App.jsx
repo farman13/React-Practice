@@ -65,6 +65,6 @@ export default App
 // the actual DOM,React efficiently updates only the changed parts in the actual DOM (using its reconciliation process).
 
 
-// IMP : As Counter component is inside the count1 becomes zero when we perform any of the operations on count ,
-// bcoz it will re-render the whole App component which re-mounts the Counter component
+// IMP : As Counter component is inside the app, count1 becomes zero when we perform any of the operations on count ,
+// bcoz it will re-render the whole App component which re-mounts the Counter component.
 
