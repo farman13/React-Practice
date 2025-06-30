@@ -39,7 +39,7 @@ function App() {
 export default App
 
 /*
-***** Children - it is used when we are passing down the varaibles in component.
+***** Children - it is used when we are passing down the varaibles/data in component.
 
 import React from 'react';
 
